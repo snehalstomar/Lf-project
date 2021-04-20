@@ -8,7 +8,7 @@ Team-Members:
 + Subhankar Chakraborty
 + Aqil KH
 
-##The Seven Broad steps required to be performed in order to prcess raw 4D light field data as mentioned in [1] are:
+#The Seven Broad steps required to be performed in order to prcess raw 4D light field data as mentioned in [1] are:
 
 Note: Coordinates(i, j, k, l)[As mentioned in [1]] ~ (u, v, x, y)[As per theory taught in class]
 1. Demosaicing(similar to bayer pattern) and Vignetting Correction(division by white image).
@@ -19,7 +19,7 @@ Note: Coordinates(i, j, k, l)[As mentioned in [1]] ~ (u, v, x, y)[As per theory 
 6. Masking off pixels that lie outside the hexagonal lenslet image
 7. Final conversion (x,y,u,v) --> (u,v,x,y) [Interpreting the Light field as an array of images captured from different perspectives which form on a specific sized sub-grid of the Sensor plane.]  
 
-##The functions from[2] which perform these tasks have been grouped as under:
+#The functions from[2] which perform these tasks have been grouped as under:
 + Step 1:
 + Step 2:
 + Step 3:
@@ -28,7 +28,7 @@ Note: Coordinates(i, j, k, l)[As mentioned in [1]] ~ (u, v, x, y)[As per theory 
 + Step 6:
 + Step 7:
 
-##Our Python Translations for the same are listed as under:
+#Our Python Translations for the same are listed as under:
 
 | MATLAB Function   | Python Program |
 | ----------------- | -------------- |
@@ -37,6 +37,6 @@ Note: Coordinates(i, j, k, l)[As mentioned in [1]] ~ (u, v, x, y)[As per theory 
 
 
 
-##References:
+#References:
 + [1] D. G. Dansereau, O. Pizarro, and S. B. Williams, “Decoding, calibration and rectification for lenselet-based plenoptic cameras,” in Computer Vision and Pattern Recognition (CVPR), 2013, pp. 1027–1034.
 + [2] The [MATLAB light-field toolbox](https://in.mathworks.com/matlabcentral/fileexchange/75250-light-field-toolbox)
