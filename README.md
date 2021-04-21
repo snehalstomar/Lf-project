@@ -12,7 +12,7 @@ Team-Members:
 
 Note: Coordinates(i, j, k, l)[As mentioned in [1]] ~ (u, v, x, y)[As per theory taught in class]
 1. Demosaicing(similar to bayer pattern) and Vignetting Correction(division by white image).
-2. Aligning Sub-aperutre(lenslet) image centres to integer lcations on the sensor grid(image centre--> brightest spot, for alignment--> Rotation, Scaling).
+2. Aligning Sub-aperture(lenslet) image centres to integer lcations on the sensor grid(image centre--> brightest spot, for alignment--> Rotation, Scaling).
 3. Slicing each of the lenslet images(While accounting for heaxagonal(specific to lytro camera) to Rectangular distortions) separately. This slicing happens in the outer(spatial) coordinates(x,y) and not in the inner(angular) coordinates(u, v).
 4. Converting Hexagonally sampled data to a rectilinear grid by interpolating along x.
 5. Correcting for rectangular(non-square) pixels by interpolating along u.
@@ -26,7 +26,7 @@ Note: Coordinates(i, j, k, l)[As mentioned in [1]] ~ (u, v, x, y)[As per theory 
 | ---------------------------------- | ---------------------------- |
 | LFDecodeLensletImageSimple.m       | LFDecodeLensletImageSimple.py|         
 | 									 | SliceXYImage.py              |
-| ---------------------------------- | ---------------------------- |  
+  
 
 
 ### References:
