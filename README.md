@@ -19,21 +19,13 @@ Note: Coordinates(i, j, k, l)[As mentioned in [1]] ~ (u, v, x, y)[As per theory 
 6. Masking off pixels that lie outside the hexagonal lenslet image
 7. Final conversion (x,y,u,v) --> (u,v,x,y) [Interpreting the Light field as an array of images captured from different perspectives which form on a specific sized sub-grid of the Sensor plane.]  
 
-### The functions from[2] which perform these tasks have been grouped as under:
-+ Step 1:
-+ Step 2:
-+ Step 3:
-+ Step 4:
-+ Step 5:
-+ Step 6:
-+ Step 7:
 
 ### Our Python Translations for the same are listed as under:
 
-| MATLAB Function   | Python Program |
-| ----------------- | -------------- |
-| A.m               | A.py           |
-| B.m               | B.py           |
+| MATLAB Function   				 | Python Program               |
+| ---------------------------------- | ---------------------------- |
+| LFDecodeLensletImageSimple.m       | LFDecodeLensletImageSimple.py|         |
+	                                 | SliceXYImage.py              |
 
 
 
