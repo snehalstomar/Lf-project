@@ -206,9 +206,9 @@ def SliceXYImage(LensletGridModel, LensletImage, WhiteImage, DecodeOptions):
 
         for ColChan in range(1,4):
             IDirect = Interpolant[:,:,ColChan]( ImCoords )
-            IDirect(isnan(IDirect)) = 0
-            IDirect(InValidIdx) = 0
-            LF[:,:,:, 1 + [UStart:UStop], ColChan] = reshape(IDirect, size(ss))
+            IDirect[isnan(IDirect)] = 0
+            IDirect[InValidIdx] = 0
+            LF[:,:,:, 1 + range(UStart:UStop), ColChan] = reshape(IDirect, size(ss))
 
 
 
