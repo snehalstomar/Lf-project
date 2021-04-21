@@ -24,9 +24,9 @@ Note: Coordinates(i, j, k, l)[As mentioned in [1]] ~ (u, v, x, y)[As per theory 
 
 | MATLAB Function   				 | Python Program               |
 | ---------------------------------- | ---------------------------- |
-| LFDecodeLensletImageSimple.m       | LFDecodeLensletImageSimple.py|         |
-	                                 | SliceXYImage.py              |
-
+| LFDecodeLensletImageSimple.m       | LFDecodeLensletImageSimple.py|         
+| 									 | SliceXYImage.py              |
+| ---------------------------------- | ---------------------------- |  
 
 
 ### References:
