@@ -20,15 +20,16 @@ Note: Coordinates(i, j, k, l)[As mentioned in [1]] ~ (u, v, x, y)[As per theory 
 7. Final conversion (x,y,u,v) --> (u,v,x,y) [Interpreting the Light field as an array of images captured from different perspectives which form on a specific sized sub-grid of the Sensor plane.]  
 
 
-### Our Python Translations for the same are listed as under:
+### Details of our programs are as under:
+1. Program to return decoded light field without saving it as .jpg/.png:
+--Function: decode_sans_saving.py
+--Function Execution: decode_main.py
+--Working Example: decode_sans_save.ipynb
+--Directory for storing raw LF data: Data/ 
 
-| MATLAB Function   				 | Python Program               |
-| ---------------------------------- | ---------------------------- |
-| LFDecodeLensletImageSimple.m       | LFDecodeLensletImageSimple.py|         
-| 									 | SliceXYImage.py              |
-  
 
 
 ### References:
 + [1] D. G. Dansereau, O. Pizarro, and S. B. Williams, “Decoding, calibration and rectification for lenselet-based plenoptic cameras,” in Computer Vision and Pattern Recognition (CVPR), 2013, pp. 1027–1034.
 + [2] The [MATLAB light-field toolbox](https://in.mathworks.com/matlabcentral/fileexchange/75250-light-field-toolbox)
++ [3] Christopher Hahne and Amar Aggoun, "PlenoptiCam v1.0: A light-field imaging framework", arXiv, 2020. 
