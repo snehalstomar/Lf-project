@@ -22,10 +22,10 @@ Note: Coordinates(i, j, k, l)[As mentioned in [1]] ~ (u, v, x, y)[As per theory 
 
 ### Details of our programs are as under:
 1. Program to return decoded light field without saving it as .jpg/.png:
---Function: decode_sans_saving.py
---Function Execution: decode_main.py
---Working Example: decode_sans_save.ipynb
---Directory for storing raw LF data: Data/ 
++ Function: decode_sans_saving.py
++ Function Execution: decode_main.py
++ Working Example: decode_sans_save.ipynb
++ Directory for storing raw LF data: Data/ 
 
 
 
