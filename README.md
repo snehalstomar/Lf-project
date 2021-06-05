@@ -26,6 +26,11 @@ Note: Coordinates(i, j, k, l)[As mentioned in [1]] ~ (u, v, x, y)[As per theory 
 + Function Execution: decode_main.py
 + Working Example: decode_sans_save.ipynb
 + Directory for storing raw LF data: Data/ 
+2. Program to return decoded light field without performing demosaicing, contrast correction and AWB:
++ Function: Lftoolbox.py 
++ Function Execution: call_Lftoolbox.py
++ Working Example: testing_decoding_sans_saving.ipynb
++ Please ensure that 'Lftoolbox.py', 'call_Lftoolbox.py', the_raw_lightfield.lfr, and calib_data.tar are present in the PWD while executing 'call_Lftoolbox.py'
 
 
 

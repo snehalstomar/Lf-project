@@ -1023,14 +1023,7 @@ def lf_decode_sans_save(lfp_path, cal_path, full_sai = True, central_view_extrac
 		return vp_stack_out
 
 
-if __name__ == '__main__':	
-  lfp_path = '/content/drive/MyDrive/EE5176/IMG_1108.lfr'
-  calibration_path = '/content/drive/MyDrive/EE5176/caldata-B5152300590.tar'
-  #function call. desired output = decoded_views_all
-  decoded_views_all = lf_decode_sans_save(lfp_path, calibration_path)
-  #visualization of results
-  plt.imshow(decoded_views_all,cmap='gray')
-  plt.show()
+
 	
 
 
