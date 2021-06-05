@@ -244,30 +244,6 @@ class LfpMicroLenses(object):
     def lfp_img_align(self):
         return self._lfp_img_align.copy() if self._lfp_img_align is not None else None
 
-
-
-#!/usr/bin/env python
-
-__author__ = "Christopher Hahne"
-__email__ = "info@christopherhahne.de"
-__license__ = """
-    Copyright (c) 2017 Christopher Hahne <info@christopherhahne.de>
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-"""
-
 # local imports
 from plenopticam import misc
 from plenopticam.lfp_aligner.lfp_resampler import LfpResampler
@@ -516,55 +492,11 @@ class LfpResamplerModified(LfpMicroLenses):
     def lfp_out(self):
         return self._lfp_out.copy()
 
-#!/usr/bin/env python
-
-__author__ = "Christopher Hahne"
-__email__ = "info@christopherhahne.de"
-__license__ = """
-    Copyright (c) 2019 Christopher Hahne <info@christopherhahne.de>
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-"""
-
 import numpy as np
 
 
 from plenopticam.misc import PlenopticamError
 
-
-#!/usr/bin/env python
-
-__author__ = "Christopher Hahne"
-__email__ = "info@christopherhahne.de"
-__license__ = """
-    Copyright (c) 2019 Christopher Hahne <info@christopherhahne.de>
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-"""
 
 from plenopticam.cfg import PlenopticamConfig
 from plenopticam.misc import PlenopticamStatus
@@ -907,27 +839,6 @@ class LfpRearrangerModified(LfpViewpoints):
                 self.sta.progress(percentage*100, self.cfg.params[self.cfg.opt_prnt])
 
         return True
-#!/usr/bin/env python
-
-__author__ = "Christopher Hahne"
-__email__ = "info@christopherhahne.de"
-__license__ = """
-    Copyright (c) 2017 Christopher Hahne <info@christopherhahne.de>
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-"""
 
 # local imports
 from plenopticam.cfg import PlenopticamConfig
@@ -1112,19 +1023,14 @@ def lf_decode_sans_save(lfp_path, cal_path, full_sai = True, central_view_extrac
 		return vp_stack_out
 
 
-	
-
-	
-#loader = pcam.misc.DataDownloader()
-#loader.download_data(loader.host_eu_url, fp='C:/Users/aqilm/LFtoolbox/data')
-#loader.extract_archive(archive_fn='./data/illum_test_data.zip', fname_list='lfr')
-lfp_path = 'C:/Users/aqilm/LFtoolbox/labdata/IMG_1069.lfr'
-calibration_path = 'C:/Users/aqilm/LFtoolbox/labdata/caldata-B5152300590.tar'
-#function call. desired output = decoded_views_all
-decoded_views_all = lf_decode_sans_save(lfp_path, calibration_path)
-#visualization of results
-plt.imshow(decoded_views_all,cmap='gray')
-plt.show()
+if __name__ == '__main__':	
+  lfp_path = '/content/drive/MyDrive/EE5176/IMG_1108.lfr'
+  calibration_path = '/content/drive/MyDrive/EE5176/caldata-B5152300590.tar'
+  #function call. desired output = decoded_views_all
+  decoded_views_all = lf_decode_sans_save(lfp_path, calibration_path)
+  #visualization of results
+  plt.imshow(decoded_views_all,cmap='gray')
+  plt.show()
 	
 
 
