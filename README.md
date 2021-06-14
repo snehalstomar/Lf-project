@@ -4,9 +4,9 @@ This repository contains programs and related documents for our term project on 
 
 Team-Members:
 
-+ Snehal Singh Tomar
-+ Subhankar Chakraborty
-+ Aqil KH
++ [Snehal Singh Tomar](https://snehalstomar.github.io)
++ [Subhankar Chakraborty](https://github.com/Subhankar48)
++ [Aqil KH](https://github.com/AqilHussan)
 
 ### The Seven Broad steps required to be performed in order to prcess raw 4D light field data as mentioned in [1] are:
 
